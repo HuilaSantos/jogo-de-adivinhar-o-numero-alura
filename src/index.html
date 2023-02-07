@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="page-title">
+    Adivinhe o número!
+  </h1>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+</div>
+<div id='adivinhar'>
+  <label for='palpite'>Digite um número de 0 a 100:</label>
+  <input type='number' id='palpite' min=0 max=100>
+  <span id='tentativasRestantes'>Você tem 5 tentativas</span> 
+  <div id='botoes'> 
+    <button id='adivinhar' style='display:inline' onclick='adivinhar()'>Adivinhar</button>
+    <button id='dica' style='display:none' onclick='dica()'>Dica</button>
+    <button id='novoJogo' style='display:none' onclick='novoJogo()'>Novo jogo</button>
+  </div>
+  <p id='tentativas'><span id='spanTentativas' style='display:none'>Tentativas: </span></p>
+  <p id='resultado'></p>
+</div>
